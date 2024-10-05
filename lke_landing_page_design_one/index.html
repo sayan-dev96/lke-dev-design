@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin</title>
+    <script
+      src="https://kit.fontawesome.com/7dc99611d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="logo" href="#" />
+      <div>
+        <h1>Aunwesha Knowledge Technologies</h1>
+        <h2 id="name">LearnITY Knowledge Engine Administration</h2>
+      </div>
+      <a href="">Log out</a>
+    </nav>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="element">
+          <li>
+            <i
+              class="fa-solid fa-caret-right User"
+              onclick="openFileUser()"
+            ></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>User
+            Management
+            <div class="s-el1">
+              <ul class="sub1">
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>User Creation
+                </li>
+                <li>
+                  <span
+                    ><i class="fa-regular fa-file"></i>User Corpus
+                    Association</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right corpus" onclick="openFile()"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Corpus
+            <div class="s-el">
+              <ul class="sub">
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Document
+                  Category
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Corpus
+                  Definition
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Corpus Unit
+                  Configuration
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Corpus
+                  Parameters
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Pocessing
+                  Profile
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Processing
+                  Profile Parameter
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Profile
+                  Association
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Corpus
+                  Population
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Disk Corpus
+                  Population
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Corpus File
+                  Component
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Component
+                  Vectorisation
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Unit Extraction
+                  from Components
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Unit Extraction
+                  from Tables
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Extract Section
+                  Headings
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Header/Footer
+                  Extraction
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Custom
+                  Component Definition
+                </li>
+                <li>
+                  <span><i class="fa-regular fa-file"></i></span>Custom
+                  Component Extraction
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Document
+            Validation
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Table
+            Extraction
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Image Text
+            Extraction
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Ingestion
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Semantics
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Knowledge
+            Graph
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Entity
+            Management
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Model
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Word List
+            Management
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Processing
+            Procedure Management
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Answer
+            Processing
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Question
+            Answering
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Text
+            Classification
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Information
+            Extraction
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Report
+            Management
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Document
+            Comparison
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Document
+            Search
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Word
+            Embedding
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Pipeline
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Wordnet
+          </li>
+          <li>
+            <i class="fa-solid fa-caret-right"></i>
+            <span><i class="fa-regular fa-folder-closed"></i></span>Lexical
+            Resources
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      var div = document.querySelector(".s-el");
+      var divUser = document.querySelector(".s-el1");
+      var arrow = document.querySelector(".corpus");
+      var u_arrow = document.querySelector(".User");
+      var display = 1;
+      function openFile() {
+        if (display == 0) {
+          div.style.display = "none";
+          display = 1;
+          arrow.style.transform = "rotate(0)";
+        } else {
+          div.style.display = "block";
+          display = 0;
+          arrow.style.transform = "rotate(90deg)";
+        }
+      }
+      function openFileUser() {
+        if (display == 0) {
+          divUser.style.display = "none";
+          display = 1;
+          u_arrow.style.transform = "rotate(0)";
+        } else {
+          divUser.style.display = "block";
+          display = 0;
+          u_arrow.style.transform = "rotate(90deg)";
+        }
+      }
+    </script>
+  </body>
+</html>
